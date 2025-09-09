@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Essential SEO -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RareRides — Collect, Review & Auction Die‑Cast Cars</title>
+  <meta name="description" content="RareRides is a one‑page site for die‑cast collectors. Showcase your collection, review others' sets, and run eBay‑style auctions for rare Hot Wheels." />
+  <meta name="keywords" content="Hot Wheels, die-cast cars, toy car collection, Hot Wheels review, Hot Wheels auction, rare Hot Wheels, collectors, eBay style auction" />
+  <link rel="canonical" href="https://rarerides.example/" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="author" content="RareRides" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="RareRides — Collect, Review & Auction Die‑Cast Cars" />
+  <meta property="og:description" content="Showcase your Hot Wheels, review other collectors, and bid on rare finds with simple eBay‑style auctions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rarerides.example/" />
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='100%25' height='100%25' fill='%230d0d0d'/%3E%3Ctext x='50%25' y='52%25' text-anchor='middle' font-size='56' fill='%23ff4d4f' font-family='Arial, Helvetica, sans-serif'%3ERareRides%3C/text%3E%3C/svg%3E" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RareRides — Collect, Review & Auction Die‑Cast Cars" />
+  <meta name="twitter:description" content="Showcase, review, and auction Hot Wheels in one place." />
+  <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='100%25' height='100%25' fill='%230d0d0d'/%3E%3Ctext x='50%25' y='52%25' text-anchor='middle' font-size='56' fill='%23ff4d4f' font-family='Arial, Helvetica, sans-serif'%3ERareRides%3C/text%3E%3C/svg%3E" />
+
+  <!-- Favicons (replace with your own) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23ff4d4f'/%3E%3Cpath d='M14 36c10-10 26-10 36 0-10 6-26 6-36 0z' fill='white'/%3E%3C/svg%3E" />
+
+  <!-- Structured Data (JSON‑LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RareRides",
+    "url": "https://rarerides.example/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://rarerides.example/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RareRides",
+    "url": "https://rarerides.example/",
+    "logo": "https://rarerides.example/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/",
+      "https://www.facebook.com/",
+      "https://x.com/"
+    ]
+  }
+  </script>
+
+  <!-- Styles -->
+  <style>
+    :root{
+      --bg:#0b0c10; --card:#12141a; --muted:#b3b7c6; --text:#e6e8ef; --accent:#ff4d4f; --accent-2:#ffd166; --ring:#2b2f3a;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1200px;margin:0 auto;padding:20px}
+    header{position:sticky;top:0;z-index:50;background:rgba(11,12,16,.8);backdrop-filter:blur(6px);border-bottom:1px solid #1e222b}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px}
+    .logo-mark{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-weight:900}
+    .nav-links{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:12px;border:1px solid #252a34;background:#191c24;color:var(--text);cursor:pointer}
+    .btn:hover{border-color:#2f3643}
+    .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:36px 0}
+    .hero h1{font-size:clamp(28px,6vw,46px);line-height:1.1;margin:.2em 0}
+    .pill{display:inline-flex;gap:8px;align-items:center;background:#161922;border:1px solid #242a36;padding:6px 10px;border-radius:999px;color:var(--muted);font-size:14px}
+    .tag{display:inline-block;padding:2px 8px;border-radius:999px;background:#1a1f29;border:1px solid #2a3240;font-size:12px;color:var(--muted)}
+    .card{background:var(--card);border:1px solid #1e2330;border-radius:16px;padding:16px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+    .grid{display:grid;gap:16px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid.cols-3{grid-template-columns:1fr}.grid.cols-2{grid-template-columns:1fr}}
+    h2{font-size:clamp(22px,3vw,28px);margin:6px 0 14px}
+    .list{display:grid;gap:10px}
+    .list li{display:flex;gap:10px;align-items:flex-start}
+    .bullet{width:10px;height:10px;border-radius:2px;background:var(--accent);margin-top:6px}
+    .search{display:flex;gap:8px;margin-top:12px}
+    input,select,textarea{width:100%;background:#0e1117;border:1px solid #232938;border-radius:12px;color:var(--text);padding:10px 12px}
+    label{display:block;margin:.5rem 0 .35rem;color:var(--muted);font-size:.95rem}
+    .section{padding:22px 0}
+    .kpis{display:flex;gap:14px;flex-wrap:wrap}
+    .kpi{flex:1 1 160px;background:#131722;border:1px solid #202637;border-radius:14px;padding:12px;text-align:center}
+    .kpi strong{font-size:22px}
+    .collection-card img,.auction-card img{width:100%;height:180px;object-fit:cover;border-radius:10px;border:1px solid #232938;background:#0e1117}
+    .stars{letter-spacing:2px}
+    .footer{border-top:1px solid #1e222b;color:#9aa3b2;padding:24px 0;text-align:center}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <header role="banner" aria-label="Site header">
+    <div class="container">
+      <nav aria-label="Primary">
+        <div class="logo" aria-label="RareRides home">
+          <div class="logo-mark" aria-hidden="true">RR</div>
+          <span>RareRides</span>
+        </div>
+        <div class="nav-links" role="navigation">
+          <a href="#collections">Collections</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#auctions">Auctions</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact" class="btn">Contact</a>
+          <a href="#start" class="btn primary">Start Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="start" class="container">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <span class="pill" aria-label="USP badges"><span aria-hidden="true">🔥</span> One‑page collector hub</span>
+        <h1 id="hero-title">Showcase, Review & Auction Your <span style="color:var(--accent)">Hot Wheels</span></h1>
+        <p>Built for die‑cast fans: browse curated collections, leave reviews with star ratings, and run lightweight eBay‑style auctions — all in one page, no backend required.</p>
+        <div class="kpis" aria-label="Site stats">
+          <div class="kpi"><strong id="stat-collections">48</strong><br /><small>Collections</small></div>
+          <div class="kpi"><strong id="stat-reviews">212</strong><br /><small>Reviews</small></div>
+          <div class="kpi"><strong id="stat-auctions">9</strong><br /><small>Live Auctions</small></div>
+        </div>
+        <form class="search" role="search" aria-label="Search collections" onsubmit="event.preventDefault(); filterCollections();">
+          <label for="search" class="sr-only">Search collections</label>
+          <input id="search" name="q" placeholder="Search by car, series or year (e.g., Super Treasure Hunt 2018)" autocomplete="off" />
+          <button class="btn" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="card" aria-label="Featured collection">
+        <img src="https://images.unsplash.com/photo-1520975708797-2f2be0b3ed2b?q=80&w=1200&auto=format&fit=crop" alt="Close‑up of a red Hot Wheels car on a track" style="border-radius:12px;border:1px solid #242a36" />
+        <div style="padding:12px 4px">
+          <strong>Featured: Redline Era Highlights</strong>
+          <p class="tag" aria-label="Era tag">1968–1977</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collections -->
+    <section id="collections" class="section" aria-labelledby="collections-title" itemscope itemtype="https://schema.org/CollectionPage">
+      <h2 id="collections-title">Browse Collector Galleries</h2>
+      <p>Discover sets from around the world. Click a card to see details and leave a review.</p>
+      <div class="grid cols-3" id="collectionGrid" role="list" aria-label="Collections list"></div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section card" aria-labelledby="reviews-title">
+      <h2 id="reviews-title">Review a Collection</h2>
+      <p>Share feedback on any collection. Your review will be stored in your browser (demo mode).</p>
+      <form id="reviewForm" onsubmit="submitReview(event)" aria-describedby="review-help">
+        <div class="grid cols-2">
+          <div>
+            <label for="reviewCollection">Collection</label>
+            <select id="reviewCollection" required aria-required="true"></select>
+          </div>
+          <div>
+            <label for="rating">Rating</label>
+            <select id="rating" required aria-required="true">
+              <option value="">Choose…</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+        <label for="headline">Headline</label>
+        <input id="headline" placeholder="e.g., Stunning Super Treasure Hunt lineup!" required />
+        <label for="content">Your Review</label>
+        <textarea id="content" rows="4" placeholder="What did you love, what could improve?" required></textarea>
+        <button class="btn primary" type="submit">Submit Review</button>
+        <p id="review-help" class="tag" style="margin-top:8px">Demo only: data saved to your local browser.</p>
+      </form>
+      <div id="recentReviews" class="section" aria-live="polite" aria-atomic="false"></div>
+    </section>
+
+    <!-- Auctions -->
+    <section id="auctions" class="section" aria-labelledby="auction-title">
+      <h2 id="auction-title">Live Auctions (eBay‑Style)</h2>
+      <p>Bid on rare finds. These are demo auctions — bids are stored locally.</p>
+      <div class="grid cols-3" id="auctionGrid"></div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section card" aria-labelledby="faq-title">
+      <h2 id="faq-title">Frequently Asked Questions</h2>
+      <ul class="list" role="list">
+        <li><span class="bullet" aria-hidden="true"></span><div><strong>Is this production‑ready?</strong><br/>This is a front‑end demo using localStorage. Hook the forms to your backend or Firebase/Supabase to go live.</div></li>
+        <li><span class="bullet" aria-hidden="true"></span><div><strong>How do reviews work?</strong><br/>Pick a collection, add a rating and message. They appear instantly under “Recent Reviews”.</div></li>
+        <li><span class="bullet" aria-hidden="true"></span><div><strong>How do auctions work?</strong><br/>Click an auction card, place a higher bid than the current price, and confirm. Add authentication and payment to make it real.</div></li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact the Collector</h2>
+      <div class="card">
+        <form onsubmit="event.preventDefault(); alert('Message sent (demo)!');">
+          <div class="grid cols-2">
+            <div>
+              <label for="name">Your Name</label>
+              <input id="name" required autocomplete="name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" required autocomplete="email" />
+            </div>
+          </div>
+          <label for="msg">Message</label>
+          <textarea id="msg" rows="4" required placeholder="Tell me which Hot Wheels you are after…"></textarea>
+          <button class="btn primary" type="
